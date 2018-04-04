@@ -15,12 +15,10 @@ Recommendations:
 
 1. Go to `KAFKA_HOME/bin` and launch zookeeper service by:  
 `zookeeper-server-start.sh ../config/zookeeper.properties `
-
 Zookeeper will to be run on localhost:2181 by default
 
 2. Launch kafka-server service:
 `kafka-server-start.sh ../config/server.properties `
-
 Kafka will to be run on localhost:9092 by default
 
 3. Go to `CASSANDRA_HOME/bin` and start your cassandra service by command:
