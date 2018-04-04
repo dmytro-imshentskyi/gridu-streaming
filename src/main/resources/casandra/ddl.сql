@@ -1,0 +1,16 @@
+//Define keyspace for local setup
+//Replication factor 1 is only for simplicity on 1-node Cassandra installations, not for production
+
+CREATE KEYSPACE adv WITH
+replication = {
+    'class': 'SimpleStrategy',
+    'replication_factor': 1
+};
+
+//define base data entity. Ip is a natural primary key. Not production ready solution.
+CREATE TABLE ip_event_count (
+  ip string PRIMARY KEY, //
+  count bigint,
+  startTime bigint,
+  endTime bigint
+)
