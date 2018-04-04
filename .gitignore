@@ -1,0 +1,5 @@
+.idea/
+target/
+project/
+src/main/resources/mock/flumespool
+src/main/resources/mock/*.COMPLETED
