@@ -15,11 +15,9 @@ Recommendations:
 
 1. Go to `KAFKA_HOME/bin` and launch zookeeper service by:  
 `zookeeper-server-start.sh ../config/zookeeper.properties `
-Zookeeper will to be run on localhost:2181 by default
 
 2. Launch kafka-server service:
-`kafka-server-start.sh ../config/server.properties `
-Kafka will to be run on localhost:9092 by default
+`kafka-server-start.sh ../config/server.properties 
 
 3. Go to `CASSANDRA_HOME/bin` and start your cassandra service by command:
 cassandra
@@ -30,6 +28,8 @@ Refresh project and download all dependencies.
 5. Launch ETL flume pipeline. Go to FLUME_HOME/bin and run
 `sh flume-ng agent -n adv-agent -c conf -f PROJECT_HOME/src/main/resources/flumeEventsToKafka.properties`
 
-6. Run Demo.scala application. Enjoy my first InStreaming application.
+6. (Optional) Checkout application.conf and fix default parameters 
+
+7. Run Demo.scala application. Enjoy my first InStreaming application.
 
 
